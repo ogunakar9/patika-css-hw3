@@ -5,7 +5,7 @@ nav {
     background-color: yellow;
 }
 
-.header {
+.header-left {
     list-style-type: none;
     margin: 10px;
     overflow: hidden;
@@ -14,6 +14,20 @@ nav {
     font-size: 13px;
     display: flex;
     background-color: lightblue;
+    padding-left: 0;
+    align-self: flex-start;
+  }
+
+  .header-right {
+    list-style-type: none;
+    margin: 10px;
+    overflow: hidden;
+    margin-right: 16px;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    display: flex;
+    background-color: lightblue;
+    flex-direction: row-reverse;
   }
   
   .headerli a {
@@ -32,6 +46,12 @@ nav {
     text-align: center;
     margin: 100px;
   }
+
+  .container img {
+    height: 92px;
+    aspect-ratio: auto 272 / 92;
+    width: 272px;
+  }
   
   .search-area {
     background: #fff;
@@ -39,6 +59,7 @@ nav {
     border: 1px solid #dfe1e5;
     box-shadow: none;
     z-index: 3;
+    border-radius: 24px;
     height: 44px;
     margin: 0 auto;
     margin-top: -77px;
@@ -78,6 +99,7 @@ nav {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
+    
   }
   
   .input-area {
@@ -111,8 +133,46 @@ nav {
     text-align: start;
     appearance: textfield;
     cursor: text;
+    width: 100%;
+    border: none;
   }
   
+  .voice-img {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    margin-top: -5px;
+    cursor: pointer;
+  }
+
+  .voice-img img {
+    height: 24px;
+    width: 24px;
+    margin-top: 0px;
+    display: inline-block;
+  }
+
+  .buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .buttons button {
+      border: 1px solid #f2f2f2;
+      border-radius: 4px;
+      padding: 0 16px;
+      height: 36px;
+      margin: 11px 4px;
+      color: #5F6368;
+  }
+
+  .buttons button:hover {
+      cursor: pointer;
+      border: 1px solid #c6c6c6;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,0.19);
+  }
+
   .googlesearch {
     margin: 11px 4px;
     padding: 0 16px;
@@ -143,6 +203,8 @@ nav {
     width: 100%;
     margin-left: -8px;
     line-height: 10px;
+    background-color: #f2f2f2;
+    list-style: none;
   }
   
   .footerli {

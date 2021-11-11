@@ -6,7 +6,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: yellow;
 }
 
 .header-left {
@@ -17,7 +16,6 @@ nav {
     font-family: arial,sans-serif;
     font-size: 13px;
     display: flex;
-    background-color: lightblue;
     padding-left: 0;
     align-self: flex-start;
   }
@@ -29,8 +27,8 @@ nav {
     font-family: arial,sans-serif;
     font-size: 13px;
     display: flex;
-    background-color: lightblue;
     flex-direction: row-reverse;
+    align-items: center;
   }
  
 
@@ -64,7 +62,7 @@ nav {
     box-shadow: none;
     z-index: 3;
     border-radius: 24px;
-    height: 44px;
+    height: 46px;
     margin: 0 auto;
     margin-top: -77px;
     width: 582px;
@@ -161,6 +159,7 @@ nav {
       justify-content: center;
       align-items: center;
       margin-top: 18px;
+      margin-right: 13px;
   }
 
   .buttons button {
@@ -170,6 +169,8 @@ nav {
       height: 36px;
       margin: 11px 4px;
       color: #5F6368;
+      line-height: 27px;
+      font-size: 14px;
   }
 
   .buttons button:hover {

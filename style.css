@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -20,16 +24,16 @@ nav {
 
   .header-right {
     list-style-type: none;
-    margin: 10px;
     overflow: hidden;
-    margin-right: 16px;
+    margin: 0 15px 0 0;
     font-family: arial,sans-serif;
     font-size: 13px;
     display: flex;
     background-color: lightblue;
     flex-direction: row-reverse;
   }
-  
+ 
+
   .headerli a {
     display: block;
     color: black;
@@ -44,7 +48,7 @@ nav {
   
   .container {
     text-align: center;
-    margin: 100px;
+    margin: 137px 100px 100px 100px;
   }
 
   .container img {
@@ -156,6 +160,7 @@ nav {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 18px;
   }
 
   .buttons button {
